@@ -64,19 +64,28 @@ pip  install  einops  gdown  addict  future  lmdb  numpy  pyyaml  requests  scip
 | | | | ...
 
 ```
+
+### Train
+
+```bash
+
+python  train_fuse.py
+
+```
+
 ### Test
 
-You can test the model using the following commands. Pre-trained weights are available at ```trained_weights``` folder. GT Mean evaluation is <b>disabled</b> in our experiments but can be activated by setting the boolean flag ```gt_mean=True``` in the ```compute_psnr()``` method under the ```test.py``` file.
+You can test the model using the following commands. Pre-trained weights are available at ```trained_weights``` folder.
 
 
   
 
 ```bash
 
-python  test.py
+python  test_fuse.py
 
 ```
 
   
 
-**Note:** Please modify the dataset and trained weight paths in ```test.py``` as per your requirements.
+**Note:** Please modify the dataset and trained weight paths in ```test_fuse.py``` as per your requirements.
